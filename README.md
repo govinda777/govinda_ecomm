@@ -1,4 +1,23 @@
-1 - yarn create next-app -e with-tailwindcss client
+1 - Criar uma aplicação cliente UI em Next
+
+yarn create next-app -e with-tailwindcss client
+
+2 - Execute a aplicação e verifique se está funcionando.
+
+cd client
+yarn dev
+
+3 - Instalação do gerenciador de conteúdo Sanity.
+
+cd studio
+
+sanity init --coupon cleverprogrammer
+
+4 - Iniciar o sanity
+
+sanity start
+
+
 
 
   yarn dev
