@@ -1,4 +1,7 @@
-yarn dev
+1 - yarn create next-app -e with-tailwindcss client
+
+
+  yarn dev
     Starts the development server.
 
   yarn build
