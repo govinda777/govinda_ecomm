@@ -6,8 +6,8 @@ import { HiOutlineDotsVertical } from 'react-icons/hi'
 import ethLogo from '../assets/eth.png'
 import uniswapLogo from '../assets/uniswap.png'
 import { useContext } from 'react'
-
-
+import { TransactionContext } from '../context/TransactionContext'
+import { client } from '../lib/sanityClient'
 
 const style = {
   wrapper: `p-4 w-screen flex justify-between items-center`,
@@ -27,7 +27,7 @@ const style = {
 const Header = () => {
   const [selectedNav, setSelectedNav] = useState('swap')
   const [userName, setUserName] = useState<string>()
-  
+  const { connectWallet, currentAccount } = useContext(TransactionContext)
 
   useEffect(() => {
     if (currentAccount) {
